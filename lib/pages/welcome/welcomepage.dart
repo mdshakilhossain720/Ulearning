@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'widgets.dart';
+
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
 
@@ -12,6 +14,11 @@ class WelcomeScreen extends StatelessWidget {
           PageView(
             scrollDirection: Axis.horizontal,
             children: [
+              appOnBoarding(
+                  imagePath: 'assets/images/reading.png',
+                  title: 'Learn To the Frist learn',
+                  subtitle: 'Learn new things and improve your skills'),
+              appOnBoarding(),
               appOnBoarding(),
             ],
           ),

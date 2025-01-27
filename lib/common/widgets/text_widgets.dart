@@ -12,14 +12,14 @@ Widget text24Normal({required String text}) {
   );
 }
 
-Widget text16Normal({required String text}) {
+Widget text16Normal({required String text, Color color = Colors.blue}) {
   return Text(
     text,
     textAlign: TextAlign.center,
-    style: const TextStyle(
+    style: TextStyle(
       fontSize: 16,
       fontWeight: FontWeight.bold,
-      color: Colors.blue,
+      color: color,
     ),
   );
 }

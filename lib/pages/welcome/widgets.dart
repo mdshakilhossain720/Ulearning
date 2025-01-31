@@ -55,13 +55,14 @@ Widget nextButton(int index, PageController controller) {
           duration: const Duration(milliseconds: 500),
           curve: Curves.easeInOut,
         );
-      } else {
-        controller.animateToPage(
-          index + 1,
-          duration: const Duration(milliseconds: 500),
-          curve: Curves.easeInOut,
-        );
       }
+      // else {
+      //   controller.animateToPage(
+      //     index + 1,
+      //     duration: const Duration(milliseconds: 500),
+      //     curve: Curves.easeInOut,
+      //   );
+      // }
     },
     child: Container(
       width: 325,
